@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Getit by uD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <style>
+      
+      :root{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*{
+    text-decoration: none;
+    color:white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #555;
+    overflow: hidden;
+    background: rgba(183, 181, 255, 0.93);
+}
+
+.menu{
+    width: 300px;
+    height: auto;
+    background: #162447;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.menu .btn{
+    display:block;
+    padding: 1rem;
+    border-bottom: solid 1px #1b1b2f;
+    border-top: solid 1px #1f4068;
+    position: relative;
+}
+
+.menu .submenu {
+    background: #1b1b2f;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .8s ease-out;
+}
+
+.menu .submenu a{
+    display:block;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu .submenu a::before{
+    content:'';
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 5px;
+    background: #00ff11;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.menu .submenu a:hover{
+    padding-left: calc(1rem + 5px);
+}
+
+.menu .submenu a:hover::before{
+    opacity: 1;
+}
+
+.item:target .submenu{
+    max-height: 20rem;
+}
+   </style>
+
+
+<body>
+   <div class="menu">
+        <li class="item" id="mn1">
+            <a class="btn" href="#mn1">Remote A</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=ankur.lashkarkar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Ankur.Lashkar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=ankur.jayesh1.mhatre@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Jayesh1.Mhatre</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=pratik.more@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Pratik.More</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=rahul21.chauhan@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Rahul21.Chauhan</a>
+        </li>
+        <li class="item" id="mn2">
+            <a class="btn" href="#mn2">Remote B</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=Akshay1.Lawangare@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Akshay1.Lawangare</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=prasad1.kesarkar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Prasad1.Kesarkar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=santosh3.kadam@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Santosh3.Kadam</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=swapnil6.shinde@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Swapnil6.Shinde</a>
+            </div>
+        </li>
+        <li class="item" id="mn3">
+            <a class="btn" href="#mn3">Remote C</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=gayatri.bagul@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Gayatri.Bagul</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=ginchil.jl@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Ginchil.JL</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=jagruti.bhaisare@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Jagruti.Bhaisare</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=laxmi.wazir@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Laxmi.Wazir</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=rituja.kharat@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Rituja.Kharat</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=vanashree.temgire@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Vanashree.Temgire</a>
+    
+
+            </div>
+        </li>
+
+        
+        <li class="item" id="mn4">
+            <a class="btn" href="#mn4">Remote D</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=hitesh.chaurasia@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Hitesh.Chaurasia</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=prathamesh.haldanka@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Prathamesh.Haldanka</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=sachin.nawale@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Sachin.Nawale</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=suraj.shelar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Suraj.Shelar</a>
+            </div>
+        </li>
+        <li class="item" id="mn5">
+            <a class="btn" href="#mn5">Remote E</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=akshaykumar.jagdale@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Akshaykumar.Jagdale</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=bhavesh.mayekar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Bhavesh.Mayekar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=gaurav62.singh@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Gaurav62.Singh</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=omkar.kadam@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Omkar.Kadam</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=ritesh8.gupta@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Ritesh8.Gupta</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=rohit.veshi@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Rohit.Veshi</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=sanjay.ramena@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Sanjay.Ramena</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=shrikanth.mundhe@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Shrikanth.Mundhe</a>
+            </div>
+        </li>
+        <li class="item" id="mn6">
+            <a class="btn" href="#mn6">Remote F</a>
+            <div class="submenu">
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=arpana.khedekar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Arpana.Khedekar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=manali.hindalekar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Manali.Hindalekar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=monica.kondhalkar@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Monica.Kondhalkar</a>
+                <a href="https://teams.microsoft.com/l/chat/0/0?users=shraddha.meshram@ril.com&message=Please+check+this+request+on+priority" target=”_blank”>Shraddha.Meshram</a>
+            </div>
+
+    </div>
+
+</body>
+
+</html>
